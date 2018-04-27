@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5652091198A00205E72 /* AppDelegate.swift */; };
+		1FCDD56B2091198A00205E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDD5692091198A00205E72 /* Main.storyboard */; };
+		1FCDD56E2091198A00205E72 /* ARCHIDPLY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD56C2091198A00205E72 /* ARCHIDPLY.xcdatamodeld */; };
+		1FCDD5702091198A00205E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDD56F2091198A00205E72 /* Assets.xcassets */; };
+		1FCDD5732091198A00205E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDD5712091198A00205E72 /* LaunchScreen.storyboard */; };
+		1FCDD57D20911A3200205E72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD57C20911A3200205E72 /* LoginViewController.swift */; };
+		1FCDD58020911A9B00205E72 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD57F20911A9B00205E72 /* CoreDataManager.swift */; };
+		1FCDD5842091395C00205E72 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5832091395C00205E72 /* HomeViewController.swift */; };
+		1FCDD5892092274A00205E72 /* ExtesionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5882092274A00205E72 /* ExtesionClass.swift */; };
+		1FCDD58B209227AC00205E72 /* CommonObjectClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD58A209227AC00205E72 /* CommonObjectClass.swift */; };
+		1FCDD58D209227D300205E72 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD58C209227D300205E72 /* Constants.swift */; };
+		1FCDD58F209227E400205E72 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD58E209227E400205E72 /* AlertMessages.swift */; };
+		1FCDD5912092290600205E72 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5902092290500205E72 /* Reach.swift */; };
+		1FCDD5932092299400205E72 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5922092299400205E72 /* NavigationViewController.swift */; };
+		1FCDD59620922BE200205E72 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59520922BE200205E72 /* HomeCollectionViewCell.swift */; };
+		1FCDD59820925D7700205E72 /* DailyVisitEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59720925D7700205E72 /* DailyVisitEntryViewController.swift */; };
+		1FCDD59A20925D9300205E72 /* AddNewClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59920925D9300205E72 /* AddNewClientViewController.swift */; };
+		1FCDD59C20925DA600205E72 /* EditPJPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59B20925DA600205E72 /* EditPJPViewController.swift */; };
+		1FCDD59E20925DBD00205E72 /* ViewWeeklyPJPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59D20925DBD00205E72 /* ViewWeeklyPJPViewController.swift */; };
+		1FCDD5A020925DD600205E72 /* ClientHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59F20925DD600205E72 /* ClientHistoryViewController.swift */; };
+		1FCDD5A220925DEC00205E72 /* SalesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5A120925DEC00205E72 /* SalesDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FCDD5622091198A00205E72 /* ARCHIDPLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHIDPLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCDD5652091198A00205E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FCDD56A2091198A00205E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FCDD56D2091198A00205E72 /* ARCHIDPLY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARCHIDPLY.xcdatamodel; sourceTree = "<group>"; };
+		1FCDD56F2091198A00205E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FCDD5722091198A00205E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FCDD5742091198A00205E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCDD57C20911A3200205E72 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1FCDD57F20911A9B00205E72 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1FCDD5832091395C00205E72 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1FCDD5882092274A00205E72 /* ExtesionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtesionClass.swift; sourceTree = "<group>"; };
+		1FCDD58A209227AC00205E72 /* CommonObjectClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonObjectClass.swift; sourceTree = "<group>"; };
+		1FCDD58C209227D300205E72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1FCDD58E209227E400205E72 /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		1FCDD5902092290500205E72 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		1FCDD5922092299400205E72 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		1FCDD59520922BE200205E72 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1FCDD59720925D7700205E72 /* DailyVisitEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVisitEntryViewController.swift; sourceTree = "<group>"; };
+		1FCDD59920925D9300205E72 /* AddNewClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClientViewController.swift; sourceTree = "<group>"; };
+		1FCDD59B20925DA600205E72 /* EditPJPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPJPViewController.swift; sourceTree = "<group>"; };
+		1FCDD59D20925DBD00205E72 /* ViewWeeklyPJPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWeeklyPJPViewController.swift; sourceTree = "<group>"; };
+		1FCDD59F20925DD600205E72 /* ClientHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHistoryViewController.swift; sourceTree = "<group>"; };
+		1FCDD5A120925DEC00205E72 /* SalesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FCDD55F2091198A00205E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FCDD5592091198A00205E72 = {
+			isa = PBXGroup;
+			children = (
+				1FCDD57E20911A5900205E72 /* HelperClasses */,
+				1FCDD57A209119FB00205E72 /* ViewControllers */,
+				1FCDD5642091198A00205E72 /* ARCHIDPLY */,
+				1FCDD5632091198A00205E72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FCDD5632091198A00205E72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD5622091198A00205E72 /* ARCHIDPLY.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FCDD5642091198A00205E72 /* ARCHIDPLY */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD5652091198A00205E72 /* AppDelegate.swift */,
+				1FCDD5692091198A00205E72 /* Main.storyboard */,
+				1FCDD56F2091198A00205E72 /* Assets.xcassets */,
+				1FCDD5712091198A00205E72 /* LaunchScreen.storyboard */,
+				1FCDD5742091198A00205E72 /* Info.plist */,
+				1FCDD56C2091198A00205E72 /* ARCHIDPLY.xcdatamodeld */,
+			);
+			path = ARCHIDPLY;
+			sourceTree = "<group>";
+		};
+		1FCDD57A209119FB00205E72 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD594209229AC00205E72 /* NavigationVC */,
+				1FCDD57B20911A1B00205E72 /* LoginPageVC */,
+				1FCDD5822091391500205E72 /* HomeVC */,
+				1FCDD5A320925E0300205E72 /* DailyVisitEntryVC */,
+				1FCDD5A420925E1300205E72 /* AddNewClientVC */,
+				1FCDD5A520925E2300205E72 /* EditPJPVC */,
+				1FCDD5A620925E3900205E72 /* ViewWeeklyPJPVC */,
+				1FCDD5A720925E4900205E72 /* ClientHistoryVC */,
+				1FCDD5A820925E5700205E72 /* SalesDetailsVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1FCDD57B20911A1B00205E72 /* LoginPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD57C20911A3200205E72 /* LoginViewController.swift */,
+			);
+			path = LoginPageVC;
+			sourceTree = "<group>";
+		};
+		1FCDD57E20911A5900205E72 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD5902092290500205E72 /* Reach.swift */,
+				1FCDD57F20911A9B00205E72 /* CoreDataManager.swift */,
+				1FCDD5882092274A00205E72 /* ExtesionClass.swift */,
+				1FCDD58A209227AC00205E72 /* CommonObjectClass.swift */,
+				1FCDD58C209227D300205E72 /* Constants.swift */,
+				1FCDD58E209227E400205E72 /* AlertMessages.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		1FCDD5822091391500205E72 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD5832091395C00205E72 /* HomeViewController.swift */,
+				1FCDD59520922BE200205E72 /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		1FCDD594209229AC00205E72 /* NavigationVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD5922092299400205E72 /* NavigationViewController.swift */,
+			);
+			path = NavigationVC;
+			sourceTree = "<group>";
+		};
+		1FCDD5A320925E0300205E72 /* DailyVisitEntryVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD59720925D7700205E72 /* DailyVisitEntryViewController.swift */,
+			);
+			path = DailyVisitEntryVC;
+			sourceTree = "<group>";
+		};
+		1FCDD5A420925E1300205E72 /* AddNewClientVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD59920925D9300205E72 /* AddNewClientViewController.swift */,
+			);
+			path = AddNewClientVC;
+			sourceTree = "<group>";
+		};
+		1FCDD5A520925E2300205E72 /* EditPJPVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD59B20925DA600205E72 /* EditPJPViewController.swift */,
+			);
+			path = EditPJPVC;
+			sourceTree = "<group>";
+		};
+		1FCDD5A620925E3900205E72 /* ViewWeeklyPJPVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD59D20925DBD00205E72 /* ViewWeeklyPJPViewController.swift */,
+			);
+			path = ViewWeeklyPJPVC;
+			sourceTree = "<group>";
+		};
+		1FCDD5A720925E4900205E72 /* ClientHistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD59F20925DD600205E72 /* ClientHistoryViewController.swift */,
+			);
+			path = ClientHistoryVC;
+			sourceTree = "<group>";
+		};
+		1FCDD5A820925E5700205E72 /* SalesDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCDD5A120925DEC00205E72 /* SalesDetailsViewController.swift */,
+			);
+			path = SalesDetailsVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FCDD5612091198A00205E72 /* ARCHIDPLY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCDD5772091198A00205E72 /* Build configuration list for PBXNativeTarget "ARCHIDPLY" */;
+			buildPhases = (
+				1FCDD55E2091198A00205E72 /* Sources */,
+				1FCDD55F2091198A00205E72 /* Frameworks */,
+				1FCDD5602091198A00205E72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCHIDPLY;
+			productName = ARCHIDPLY;
+			productReference = 1FCDD5622091198A00205E72 /* ARCHIDPLY.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FCDD55A2091198A00205E72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Ganesh;
+				TargetAttributes = {
+					1FCDD5612091198A00205E72 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1FCDD55D2091198A00205E72 /* Build configuration list for PBXProject "ARCHIDPLY" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FCDD5592091198A00205E72;
+			productRefGroup = 1FCDD5632091198A00205E72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FCDD5612091198A00205E72 /* ARCHIDPLY */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FCDD5602091198A00205E72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCDD5732091198A00205E72 /* LaunchScreen.storyboard in Resources */,
+				1FCDD5702091198A00205E72 /* Assets.xcassets in Resources */,
+				1FCDD56B2091198A00205E72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FCDD55E2091198A00205E72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCDD5842091395C00205E72 /* HomeViewController.swift in Sources */,
+				1FCDD5932092299400205E72 /* NavigationViewController.swift in Sources */,
+				1FCDD57D20911A3200205E72 /* LoginViewController.swift in Sources */,
+				1FCDD59E20925DBD00205E72 /* ViewWeeklyPJPViewController.swift in Sources */,
+				1FCDD5A220925DEC00205E72 /* SalesDetailsViewController.swift in Sources */,
+				1FCDD56E2091198A00205E72 /* ARCHIDPLY.xcdatamodeld in Sources */,
+				1FCDD59A20925D9300205E72 /* AddNewClientViewController.swift in Sources */,
+				1FCDD5892092274A00205E72 /* ExtesionClass.swift in Sources */,
+				1FCDD58F209227E400205E72 /* AlertMessages.swift in Sources */,
+				1FCDD58B209227AC00205E72 /* CommonObjectClass.swift in Sources */,
+				1FCDD58020911A9B00205E72 /* CoreDataManager.swift in Sources */,
+				1FCDD5912092290600205E72 /* Reach.swift in Sources */,
+				1FCDD59C20925DA600205E72 /* EditPJPViewController.swift in Sources */,
+				1FCDD5A020925DD600205E72 /* ClientHistoryViewController.swift in Sources */,
+				1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */,
+				1FCDD58D209227D300205E72 /* Constants.swift in Sources */,
+				1FCDD59820925D7700205E72 /* DailyVisitEntryViewController.swift in Sources */,
+				1FCDD59620922BE200205E72 /* HomeCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FCDD5692091198A00205E72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FCDD56A2091198A00205E72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FCDD5712091198A00205E72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FCDD5722091198A00205E72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FCDD5752091198A00205E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FCDD5762091198A00205E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FCDD5782091198A00205E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARCHIDPLY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.ARCHIDPLY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FCDD5792091198A00205E72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARCHIDPLY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.ARCHIDPLY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FCDD55D2091198A00205E72 /* Build configuration list for PBXProject "ARCHIDPLY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCDD5752091198A00205E72 /* Debug */,
+				1FCDD5762091198A00205E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FCDD5772091198A00205E72 /* Build configuration list for PBXNativeTarget "ARCHIDPLY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCDD5782091198A00205E72 /* Debug */,
+				1FCDD5792091198A00205E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FCDD56C2091198A00205E72 /* ARCHIDPLY.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FCDD56D2091198A00205E72 /* ARCHIDPLY.xcdatamodel */,
+			);
+			currentVersion = 1FCDD56D2091198A00205E72 /* ARCHIDPLY.xcdatamodel */;
+			path = ARCHIDPLY.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1FCDD55A2091198A00205E72 /* Project object */;
+}
