@@ -103,6 +103,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.view.frame.origin.y = 0
     }
 
+    //Dismiss keyborad on touching empty space
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
