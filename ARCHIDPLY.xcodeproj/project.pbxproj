@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA0ACCA20AFF92F00CD1DDA /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */; };
+		1FA0AD2B20B0B68800CD1DDA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACDC20B0B68800CD1DDA /* Array+Extensions.swift */; };
+		1FA0AD2C20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACDD20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift */; };
+		1FA0AD2D20B0B68800CD1DDA /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACDE20B0B68800CD1DDA /* UIImageView+Extensions.swift */; };
+		1FA0AD2E20B0B68800CD1DDA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACDF20B0B68800CD1DDA /* UIViewController+Extensions.swift */; };
+		1FA0AD2F20B0B68800CD1DDA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE020B0B68800CD1DDA /* UIView+Extensions.swift */; };
+		1FA0AD3020B0B68800CD1DDA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE120B0B68800CD1DDA /* Date+Extension.swift */; };
+		1FA0AD3120B0B68800CD1DDA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE220B0B68800CD1DDA /* String+Extensions.swift */; };
+		1FA0AD3220B0B68800CD1DDA /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE320B0B68800CD1DDA /* UITextView+Extensions.swift */; };
+		1FA0AD3320B0B68800CD1DDA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE420B0B68800CD1DDA /* UIColor+Extensions.swift */; };
+		1FA0AD3420B0B68800CD1DDA /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE520B0B68800CD1DDA /* UIImage+Extensions.swift */; };
+		1FA0AD3520B0B68800CD1DDA /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE620B0B68800CD1DDA /* UISearchBar+Extensions.swift */; };
+		1FA0AD3620B0B68800CD1DDA /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE720B0B68800CD1DDA /* UIApplication+Extensions.swift */; };
+		1FA0AD3720B0B68800CD1DDA /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE820B0B68800CD1DDA /* UIAlertController+Extensions.swift */; };
+		1FA0AD3820B0B68800CD1DDA /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACE920B0B68800CD1DDA /* Optional+Extensions.swift */; };
+		1FA0AD3920B0B68800CD1DDA /* Common+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACEA20B0B68800CD1DDA /* Common+Extensions.swift */; };
+		1FA0AD3A20B0B68800CD1DDA /* Locale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACEB20B0B68800CD1DDA /* Locale+Extensions.swift */; };
+		1FA0AD3B20B0B68800CD1DDA /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACEC20B0B68800CD1DDA /* UITextField+Extensions.swift */; };
+		1FA0AD3C20B0B68800CD1DDA /* AttributedTextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACEF20B0B68800CD1DDA /* AttributedTextBlock.swift */; };
+		1FA0AD3D20B0B68800CD1DDA /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACF020B0B68800CD1DDA /* TextViewController.swift */; };
+		1FA0AD4520B0B68800CD1DDA /* TwoTextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACFE20B0B68800CD1DDA /* TwoTextFieldsViewController.swift */; };
+		1FA0AD4620B0B68800CD1DDA /* OneTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACFF20B0B68800CD1DDA /* OneTextFieldViewController.swift */; };
+		1FA0AD4E20B0B68800CD1DDA /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD0D20B0B68800CD1DDA /* PickerViewViewController.swift */; };
+		1FA0AD5320B0B68800CD1DDA /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD1720B0B68800CD1DDA /* ColorPickerViewController.swift */; };
+		1FA0AD5420B0B68800CD1DDA /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD1920B0B68800CD1DDA /* DatePickerViewController.swift */; };
+		1FA0AD5B20B0B68800CD1DDA /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD2620B0B68800CD1DDA /* Label.swift */; };
+		1FA0AD5C20B0B68800CD1DDA /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD2720B0B68800CD1DDA /* SegmentedControl.swift */; };
+		1FA0AD5D20B0B68800CD1DDA /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD2820B0B68800CD1DDA /* GradientSlider.swift */; };
+		1FA0AD5E20B0B68800CD1DDA /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD2920B0B68800CD1DDA /* TextField.swift */; };
+		1FA0AD5F20B0B68800CD1DDA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0AD2A20B0B68800CD1DDA /* Button.swift */; };
 		1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5652091198A00205E72 /* AppDelegate.swift */; };
 		1FCDD56B2091198A00205E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDD5692091198A00205E72 /* Main.storyboard */; };
 		1FCDD56E2091198A00205E72 /* ARCHIDPLY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD56C2091198A00205E72 /* ARCHIDPLY.xcdatamodeld */; };
@@ -31,6 +61,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		1FA0ACDC20B0B68800CD1DDA /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACDD20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACDE20B0B68800CD1DDA /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACDF20B0B68800CD1DDA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE020B0B68800CD1DDA /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE120B0B68800CD1DDA /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1FA0ACE220B0B68800CD1DDA /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE320B0B68800CD1DDA /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE420B0B68800CD1DDA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE520B0B68800CD1DDA /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE620B0B68800CD1DDA /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE720B0B68800CD1DDA /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE820B0B68800CD1DDA /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACE920B0B68800CD1DDA /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACEA20B0B68800CD1DDA /* Common+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACEB20B0B68800CD1DDA /* Locale+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACEC20B0B68800CD1DDA /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		1FA0ACEF20B0B68800CD1DDA /* AttributedTextBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedTextBlock.swift; sourceTree = "<group>"; };
+		1FA0ACF020B0B68800CD1DDA /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		1FA0ACFE20B0B68800CD1DDA /* TwoTextFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoTextFieldsViewController.swift; sourceTree = "<group>"; };
+		1FA0ACFF20B0B68800CD1DDA /* OneTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTextFieldViewController.swift; sourceTree = "<group>"; };
+		1FA0AD0D20B0B68800CD1DDA /* PickerViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
+		1FA0AD1720B0B68800CD1DDA /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		1FA0AD1920B0B68800CD1DDA /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1FA0AD2620B0B68800CD1DDA /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1FA0AD2720B0B68800CD1DDA /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		1FA0AD2820B0B68800CD1DDA /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
+		1FA0AD2920B0B68800CD1DDA /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		1FA0AD2A20B0B68800CD1DDA /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		1FCDD5622091198A00205E72 /* ARCHIDPLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHIDPLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCDD5652091198A00205E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCDD56A2091198A00205E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,9 +127,127 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA0ACC820AFF92100CD1DDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACDA20B0B68800CD1DDA /* Source */,
+				1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FA0ACDA20B0B68800CD1DDA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACDB20B0B68800CD1DDA /* Extensions */,
+				1FA0ACED20B0B68800CD1DDA /* Viewers */,
+				1FA0ACF120B0B68800CD1DDA /* Pickers */,
+				1FA0AD2520B0B68800CD1DDA /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1FA0ACDB20B0B68800CD1DDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACDC20B0B68800CD1DDA /* Array+Extensions.swift */,
+				1FA0ACDD20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift */,
+				1FA0ACDE20B0B68800CD1DDA /* UIImageView+Extensions.swift */,
+				1FA0ACDF20B0B68800CD1DDA /* UIViewController+Extensions.swift */,
+				1FA0ACE020B0B68800CD1DDA /* UIView+Extensions.swift */,
+				1FA0ACE120B0B68800CD1DDA /* Date+Extension.swift */,
+				1FA0ACE220B0B68800CD1DDA /* String+Extensions.swift */,
+				1FA0ACE320B0B68800CD1DDA /* UITextView+Extensions.swift */,
+				1FA0ACE420B0B68800CD1DDA /* UIColor+Extensions.swift */,
+				1FA0ACE520B0B68800CD1DDA /* UIImage+Extensions.swift */,
+				1FA0ACE620B0B68800CD1DDA /* UISearchBar+Extensions.swift */,
+				1FA0ACE720B0B68800CD1DDA /* UIApplication+Extensions.swift */,
+				1FA0ACE820B0B68800CD1DDA /* UIAlertController+Extensions.swift */,
+				1FA0ACE920B0B68800CD1DDA /* Optional+Extensions.swift */,
+				1FA0ACEA20B0B68800CD1DDA /* Common+Extensions.swift */,
+				1FA0ACEB20B0B68800CD1DDA /* Locale+Extensions.swift */,
+				1FA0ACEC20B0B68800CD1DDA /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FA0ACED20B0B68800CD1DDA /* Viewers */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACEE20B0B68800CD1DDA /* Models */,
+				1FA0ACF020B0B68800CD1DDA /* TextViewController.swift */,
+			);
+			path = Viewers;
+			sourceTree = "<group>";
+		};
+		1FA0ACEE20B0B68800CD1DDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACEF20B0B68800CD1DDA /* AttributedTextBlock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FA0ACF120B0B68800CD1DDA /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACFD20B0B68800CD1DDA /* TextFields */,
+				1FA0AD0C20B0B68800CD1DDA /* PickerView */,
+				1FA0AD1620B0B68800CD1DDA /* Color */,
+				1FA0AD1820B0B68800CD1DDA /* Date */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		1FA0ACFD20B0B68800CD1DDA /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0ACFE20B0B68800CD1DDA /* TwoTextFieldsViewController.swift */,
+				1FA0ACFF20B0B68800CD1DDA /* OneTextFieldViewController.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		1FA0AD0C20B0B68800CD1DDA /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0AD0D20B0B68800CD1DDA /* PickerViewViewController.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		1FA0AD1620B0B68800CD1DDA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0AD1720B0B68800CD1DDA /* ColorPickerViewController.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		1FA0AD1820B0B68800CD1DDA /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0AD1920B0B68800CD1DDA /* DatePickerViewController.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		1FA0AD2520B0B68800CD1DDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FA0AD2620B0B68800CD1DDA /* Label.swift */,
+				1FA0AD2720B0B68800CD1DDA /* SegmentedControl.swift */,
+				1FA0AD2820B0B68800CD1DDA /* GradientSlider.swift */,
+				1FA0AD2920B0B68800CD1DDA /* TextField.swift */,
+				1FA0AD2A20B0B68800CD1DDA /* Button.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1FCDD5592091198A00205E72 = {
 			isa = PBXGroup;
 			children = (
+				1FA0ACC820AFF92100CD1DDA /* Resources */,
 				1FCDD57E20911A5900205E72 /* HelperClasses */,
 				1FCDD57A209119FB00205E72 /* ViewControllers */,
 				1FCDD5642091198A00205E72 /* ARCHIDPLY */,
@@ -272,24 +450,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA0AD3020B0B68800CD1DDA /* Date+Extension.swift in Sources */,
+				1FA0AD2E20B0B68800CD1DDA /* UIViewController+Extensions.swift in Sources */,
+				1FA0AD5E20B0B68800CD1DDA /* TextField.swift in Sources */,
 				1FCDD5842091395C00205E72 /* HomeViewController.swift in Sources */,
 				1FCDD5932092299400205E72 /* NavigationViewController.swift in Sources */,
+				1FA0AD3A20B0B68800CD1DDA /* Locale+Extensions.swift in Sources */,
+				1FA0AD2D20B0B68800CD1DDA /* UIImageView+Extensions.swift in Sources */,
 				1FCDD57D20911A3200205E72 /* LoginViewController.swift in Sources */,
+				1FA0AD4E20B0B68800CD1DDA /* PickerViewViewController.swift in Sources */,
 				1FCDD59E20925DBD00205E72 /* ViewWeeklyPJPViewController.swift in Sources */,
+				1FA0AD2F20B0B68800CD1DDA /* UIView+Extensions.swift in Sources */,
 				1FCDD5A220925DEC00205E72 /* SalesDetailsViewController.swift in Sources */,
+				1FA0AD3520B0B68800CD1DDA /* UISearchBar+Extensions.swift in Sources */,
 				1FCDD56E2091198A00205E72 /* ARCHIDPLY.xcdatamodeld in Sources */,
+				1FA0AD3220B0B68800CD1DDA /* UITextView+Extensions.swift in Sources */,
+				1FA0AD3320B0B68800CD1DDA /* UIColor+Extensions.swift in Sources */,
 				1FCDD59A20925D9300205E72 /* AddNewClientViewController.swift in Sources */,
 				1FCDD5892092274A00205E72 /* ExtesionClass.swift in Sources */,
 				1FCDD58F209227E400205E72 /* AlertMessages.swift in Sources */,
+				1FA0AD3D20B0B68800CD1DDA /* TextViewController.swift in Sources */,
+				1FA0AD3920B0B68800CD1DDA /* Common+Extensions.swift in Sources */,
 				1FCDD58B209227AC00205E72 /* CommonObjectClass.swift in Sources */,
+				1FA0AD3120B0B68800CD1DDA /* String+Extensions.swift in Sources */,
+				1FA0ACCA20AFF92F00CD1DDA /* SearchTextField.swift in Sources */,
+				1FA0AD3820B0B68800CD1DDA /* Optional+Extensions.swift in Sources */,
+				1FA0AD3620B0B68800CD1DDA /* UIApplication+Extensions.swift in Sources */,
+				1FA0AD2B20B0B68800CD1DDA /* Array+Extensions.swift in Sources */,
 				1FCDD58020911A9B00205E72 /* CoreDataManager.swift in Sources */,
+				1FA0AD4520B0B68800CD1DDA /* TwoTextFieldsViewController.swift in Sources */,
 				1FCDD5912092290600205E72 /* Reach.swift in Sources */,
 				1FCDD59C20925DA600205E72 /* EditPJPViewController.swift in Sources */,
+				1FA0AD5C20B0B68800CD1DDA /* SegmentedControl.swift in Sources */,
+				1FA0AD4620B0B68800CD1DDA /* OneTextFieldViewController.swift in Sources */,
+				1FA0AD5320B0B68800CD1DDA /* ColorPickerViewController.swift in Sources */,
 				1FCDD5A020925DD600205E72 /* ClientHistoryViewController.swift in Sources */,
 				1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */,
+				1FA0AD3720B0B68800CD1DDA /* UIAlertController+Extensions.swift in Sources */,
+				1FA0AD2C20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift in Sources */,
 				1FCDD58D209227D300205E72 /* Constants.swift in Sources */,
 				1FCDD59820925D7700205E72 /* DailyVisitEntryViewController.swift in Sources */,
+				1FA0AD3C20B0B68800CD1DDA /* AttributedTextBlock.swift in Sources */,
+				1FA0AD3B20B0B68800CD1DDA /* UITextField+Extensions.swift in Sources */,
+				1FA0AD5420B0B68800CD1DDA /* DatePickerViewController.swift in Sources */,
 				1FCDD59620922BE200205E72 /* HomeCollectionViewCell.swift in Sources */,
+				1FA0AD3420B0B68800CD1DDA /* UIImage+Extensions.swift in Sources */,
+				1FA0AD5D20B0B68800CD1DDA /* GradientSlider.swift in Sources */,
+				1FA0AD5B20B0B68800CD1DDA /* Label.swift in Sources */,
+				1FA0AD5F20B0B68800CD1DDA /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -431,10 +639,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JG2D6N8FSZ;
 				INFOPLIST_FILE = ARCHIDPLY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.ARCHIDPLY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.archidply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,10 +655,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JG2D6N8FSZ;
 				INFOPLIST_FILE = ARCHIDPLY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.ARCHIDPLY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.archidply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

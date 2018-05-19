@@ -13,4 +13,4 @@ import UIKit
 let screenSize = UIScreen.main.bounds
 let screenWidth = screenSize.width
 let screenHeight = screenSize.height
-
+let PlaceHolderColor = UIColor.white.withAlphaComponent(0.6)

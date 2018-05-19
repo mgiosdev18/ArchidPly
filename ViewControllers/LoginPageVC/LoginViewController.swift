@@ -22,8 +22,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
 
         setupEmailTextfields()
         setupPasswordTextfields()
-        setupLoginButton()
- 
+      
+        CommonObjectClass().EnableButtons(buttons: [btnLogin], withBackgroundColor: UIColor.getCustomOrangeColor())
+        
         // Show app version
         self.lblVersion.text = String(describing:"App Version \(String(describing: Bundle.main.releaseVersionNumber!))(\(Bundle.main.buildVersionNumber!))")
         
@@ -53,44 +54,37 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     {
         
         // Apply styles to password text filed....
-        passwordTextField.layer.borderColor = UIColor.init(red: 240/255.0, green: 131/255.0, blue: 48/255.0, alpha: 1).cgColor
-        passwordTextField.backgroundColor = UIColor.clear
+      //  passwordTextField.layer.borderColor = UIColor.init(red: 240/255.0, green: 131/255.0, blue: 48/255.0, alpha: 1).cgColor
+       // passwordTextField.backgroundColor = UIColor.black
         passwordTextField.setValue(UIColor.white.withAlphaComponent(0.8), forKeyPath: "_placeholderLabel.textColor")
-        passwordTextField.layer.borderWidth = 1
-        passwordTextField.layer.cornerRadius = 5
+       // passwordTextField.layer.borderWidth = 1
+       // passwordTextField.layer.cornerRadius = 5
         // Add image to password text field...
-        let passwordLeftImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 30))
+        let passwordLeftImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         passwordLeftImage.image = #imageLiteral(resourceName: "password")
         passwordTextField.leftView = passwordLeftImage
         passwordTextField.leftViewMode = .always
+        
+        passwordTextField.setBottomBorder(withColor: UIColor.getCustomOrangeColor())
         
     }
     func setupEmailTextfields() -> Void
     {
         // Apply styles to email text filed...
-        emailTextField.layer.borderColor = UIColor.init(red: 240/255.0, green: 131/255.0, blue: 48/255.0, alpha: 1).cgColor
-        emailTextField.backgroundColor = UIColor.clear
+      //  emailTextField.layer.borderColor = UIColor.init(red: 240/255.0, green: 131/255.0, blue: 48/255.0, alpha: 1).cgColor
+      //  emailTextField.backgroundColor = UIColor.black
         emailTextField.setValue(UIColor.white.withAlphaComponent(0.8), forKeyPath: "_placeholderLabel.textColor")
-        emailTextField.layer.borderWidth = 1
-        emailTextField.layer.cornerRadius = 5
+      //  emailTextField.layer.borderWidth = 1
+      //  emailTextField.layer.cornerRadius = 5
         // Add image to email text field...
-        let emailLeftImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let emailLeftImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         emailLeftImage.image = #imageLiteral(resourceName: "email")
         emailTextField.leftView = emailLeftImage
         emailTextField.leftViewMode = .always
         
-    }
-    
-    func setupLoginButton() -> Void
-    {
-        //Apply styles to sign in button....
-        btnLogin.layer.borderColor = UIColor.white.cgColor
-        btnLogin.backgroundColor = UIColor.init(red: 240/255.0, green: 131/255.0, blue: 48/255.0, alpha: 1)
-        btnLogin.layer.borderWidth = 1
-        btnLogin.layer.cornerRadius = 5
+        emailTextField.setBottomBorder(withColor: UIColor.getCustomOrangeColor())
         
     }
-    
     
     //MARK: - Keyboard Notifications....
     //Moving textfileds on the keyboard when user enter the text filed.
