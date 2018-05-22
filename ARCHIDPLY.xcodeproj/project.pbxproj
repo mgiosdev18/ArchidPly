@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1CC29C20B4743600333E97 /* ClientHistoryDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC29B20B4743600333E97 /* ClientHistoryDatesViewController.swift */; };
+		1F1CC29F20B4794D00333E97 /* ClientHistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC29E20B4794D00333E97 /* ClientHistoryDetailsViewController.swift */; };
+		1F1CC2A220B4A04F00333E97 /* WeekyPJPDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC2A120B4A04E00333E97 /* WeekyPJPDetailsViewController.swift */; };
+		1F1CC2A520B4A6A100333E97 /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC2A420B4A6A100333E97 /* EmployeeViewController.swift */; };
 		1FA0ACCA20AFF92F00CD1DDA /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */; };
 		1FA0AD2B20B0B68800CD1DDA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACDC20B0B68800CD1DDA /* Array+Extensions.swift */; };
 		1FA0AD2C20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACDD20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift */; };
@@ -61,6 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1CC29B20B4743600333E97 /* ClientHistoryDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHistoryDatesViewController.swift; sourceTree = "<group>"; };
+		1F1CC29E20B4794D00333E97 /* ClientHistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHistoryDetailsViewController.swift; sourceTree = "<group>"; };
+		1F1CC2A120B4A04E00333E97 /* WeekyPJPDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekyPJPDetailsViewController.swift; sourceTree = "<group>"; };
+		1F1CC2A420B4A6A100333E97 /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
 		1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1FA0ACDC20B0B68800CD1DDA /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		1FA0ACDD20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
@@ -127,6 +135,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1CC29A20B4741D00333E97 /* ClientHistoryDates */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC29B20B4743600333E97 /* ClientHistoryDatesViewController.swift */,
+			);
+			path = ClientHistoryDates;
+			sourceTree = "<group>";
+		};
+		1F1CC29D20B478D800333E97 /* ClientHistoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC29E20B4794D00333E97 /* ClientHistoryDetailsViewController.swift */,
+			);
+			path = ClientHistoryDetails;
+			sourceTree = "<group>";
+		};
+		1F1CC2A020B4A03700333E97 /* WeeklyPJPDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC2A120B4A04E00333E97 /* WeekyPJPDetailsViewController.swift */,
+			);
+			path = WeeklyPJPDetails;
+			sourceTree = "<group>";
+		};
+		1F1CC2A320B4A66C00333E97 /* EmployeList */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC2A420B4A6A100333E97 /* EmployeeViewController.swift */,
+			);
+			path = EmployeList;
+			sourceTree = "<group>";
+		};
 		1FA0ACC820AFF92100CD1DDA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +328,10 @@
 				1FCDD5A620925E3900205E72 /* ViewWeeklyPJPVC */,
 				1FCDD5A720925E4900205E72 /* ClientHistoryVC */,
 				1FCDD5A820925E5700205E72 /* SalesDetailsVC */,
+				1F1CC29A20B4741D00333E97 /* ClientHistoryDates */,
+				1F1CC29D20B478D800333E97 /* ClientHistoryDetails */,
+				1F1CC2A020B4A03700333E97 /* WeeklyPJPDetails */,
+				1F1CC2A320B4A66C00333E97 /* EmployeList */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -459,6 +503,7 @@
 				1FA0AD2D20B0B68800CD1DDA /* UIImageView+Extensions.swift in Sources */,
 				1FCDD57D20911A3200205E72 /* LoginViewController.swift in Sources */,
 				1FA0AD4E20B0B68800CD1DDA /* PickerViewViewController.swift in Sources */,
+				1F1CC2A220B4A04F00333E97 /* WeekyPJPDetailsViewController.swift in Sources */,
 				1FCDD59E20925DBD00205E72 /* ViewWeeklyPJPViewController.swift in Sources */,
 				1FA0AD2F20B0B68800CD1DDA /* UIView+Extensions.swift in Sources */,
 				1FCDD5A220925DEC00205E72 /* SalesDetailsViewController.swift in Sources */,
@@ -480,15 +525,18 @@
 				1FCDD58020911A9B00205E72 /* CoreDataManager.swift in Sources */,
 				1FA0AD4520B0B68800CD1DDA /* TwoTextFieldsViewController.swift in Sources */,
 				1FCDD5912092290600205E72 /* Reach.swift in Sources */,
+				1F1CC29C20B4743600333E97 /* ClientHistoryDatesViewController.swift in Sources */,
 				1FCDD59C20925DA600205E72 /* EditPJPViewController.swift in Sources */,
 				1FA0AD5C20B0B68800CD1DDA /* SegmentedControl.swift in Sources */,
 				1FA0AD4620B0B68800CD1DDA /* OneTextFieldViewController.swift in Sources */,
 				1FA0AD5320B0B68800CD1DDA /* ColorPickerViewController.swift in Sources */,
 				1FCDD5A020925DD600205E72 /* ClientHistoryViewController.swift in Sources */,
 				1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */,
+				1F1CC29F20B4794D00333E97 /* ClientHistoryDetailsViewController.swift in Sources */,
 				1FA0AD3720B0B68800CD1DDA /* UIAlertController+Extensions.swift in Sources */,
 				1FA0AD2C20B0B68800CD1DDA /* UISegmentedControl+Extensions.swift in Sources */,
 				1FCDD58D209227D300205E72 /* Constants.swift in Sources */,
+				1F1CC2A520B4A6A100333E97 /* EmployeeViewController.swift in Sources */,
 				1FCDD59820925D7700205E72 /* DailyVisitEntryViewController.swift in Sources */,
 				1FA0AD3C20B0B68800CD1DDA /* AttributedTextBlock.swift in Sources */,
 				1FA0AD3B20B0B68800CD1DDA /* UITextField+Extensions.swift in Sources */,

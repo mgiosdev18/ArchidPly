@@ -260,8 +260,20 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
         
         if textField.tag == 5 || textField.tag == 6
         {
+            var alert_title = ""
             
-            let alert = UIAlertController(style: .actionSheet, title: "Select date")
+            if textField.tag == 5
+            {
+                alert_title = "Select Date of Birth"
+            }
+            else if textField.tag == 6
+            {
+    
+                alert_title = "Select Wedding Date"
+                    
+            }
+            
+            let alert = UIAlertController(style: .actionSheet, title: alert_title)
             alert.addDatePicker(mode: .date, date: Date(), minimumDate: nil, maximumDate: nil) { date in
                 // action with selected date
                 let dateFormatter = DateFormatter()

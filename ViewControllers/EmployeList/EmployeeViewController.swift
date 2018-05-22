@@ -1,49 +1,45 @@
 //
-//  SalesDetailsViewController.swift
+//  EmployeeViewController.swift
 //  ARCHIDPLY
 //
-//  Created by Ganesh on 27/04/18.
+//  Created by Ganesh on 23/05/18.
 //  Copyright © 2018 Ganesh. All rights reserved.
 //
 
 import UIKit
-
-struct SalesData
+struct EmployeeData
 {
-
-    var Date = String()
-    var Client = String()
-    var Manager = String()
-    var Invoice = String()
-    var Product = String()
-    var Amount = String()
-    
+    var EmpID = String()
+    var EmpName = String()
 }
 
 
-class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchControllerDelegate,UISearchBarDelegate{
-    
+class EmployeeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchControllerDelegate,UISearchBarDelegate {
+
     @IBOutlet weak var searchVw: UISearchBar!
-    @IBOutlet weak var tblSales: UITableView!
+    @IBOutlet weak var tblEmployeeList: UITableView!
     
-    var arrOfData = [SalesData]()
-    let arrOfTitleData = ["Date","Client","Manager","Invoice","Product","Amount"]
-
-    var filteredSearchResults: [SalesData]?
+    var arrOfData = [EmployeeData]()
+    let arrOfTitleData = ["Emp ID","Emp Name"]
+    
+    var filteredSearchResults: [EmployeeData]?
     let cellSpacingHeight: CGFloat = 15
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let data1 : SalesData = SalesData(Date: "12-May-2017", Client: "Niyanta", Manager: "5494", Invoice: "291", Product: "bon Vivanth", Amount: "862800")
+        let Employee1 : EmployeeData = EmployeeData( EmpID: "5494", EmpName: "Raju")
+        let Employee2 : EmployeeData = EmployeeData(EmpID: "306", EmpName: "Siva Kumar")
+        let Employee3 : EmployeeData = EmployeeData(EmpID: "364", EmpName: "Ganesh")
+        let Employee4 : EmployeeData = EmployeeData(EmpID: "391", EmpName: "Musini")
+        let Employee5 : EmployeeData = EmployeeData(EmpID: "5648", EmpName: "Raghavendra")
+        let Employee6 : EmployeeData = EmployeeData(EmpID: "2341", EmpName: "NSP")
+        let Employee7 : EmployeeData = EmployeeData(EmpID: "09897", EmpName: "Naveen")
+        let Employee8 : EmployeeData = EmployeeData(EmpID: "2341", EmpName: "Manjunath")
+        let Employee9 : EmployeeData = EmployeeData(EmpID: "8976", EmpName: "Susila")
+        let Employee10 : EmployeeData = EmployeeData(EmpID: "0909", EmpName: "Rambabu")
         
-         let data2 : SalesData = SalesData(Date: "15-May-2017", Client: "Arunachal boards", Manager: "3456", Invoice: "306", Product: "Natural veneer", Amount: "297549")
-        
-         let data3 : SalesData = SalesData(Date: "22-May-2017", Client: "Hanuman Wood Industries", Manager: "2765", Invoice: "364", Product: "Rangoon Magic Teak", Amount: "541701")
-        
-         let data4 : SalesData = SalesData(Date: "25-May-2017", Client: "NSK", Manager: "9878", Invoice: "391", Product: "bon Club Playwood", Amount: "132319")
-        
-        arrOfData = [data1,data2,data3,data4]
+        arrOfData = [Employee1,Employee2,Employee3,Employee4,Employee5,Employee6,Employee7,Employee8,Employee9,Employee10]
         
         filteredSearchResults = arrOfData
         
@@ -56,12 +52,12 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
     func setupTableView() -> Void
     {
         
-        self.tblSales.tableFooterView = UIView()
-        self.tblSales.backgroundColor = UIColor.clear
-        self.tblSales.estimatedRowHeight = 50.0
-        self.tblSales.rowHeight = UITableViewAutomaticDimension
+        self.tblEmployeeList.tableFooterView = UIView()
+        self.tblEmployeeList.backgroundColor = UIColor.clear
+        self.tblEmployeeList.estimatedRowHeight = 50.0
+        self.tblEmployeeList.rowHeight = UITableViewAutomaticDimension
     }
-
+    
     //MARK: - Setup Search bar
     
     func setupSearchBar() -> Void
@@ -72,12 +68,12 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).font = UIFont.init(name: "Ubuntu-Regular", size: 12)
         
         searchVw.showsScopeBar = true
-        searchVw.scopeButtonTitles = ["Client","Product","Manager"]
+        searchVw.scopeButtonTitles = ["Emp ID","Emp Name"]
         searchVw.selectedScopeButtonIndex = 0
         searchVw.scopeBarBackgroundImage = UIImage()
         searchVw.tintColor = UIColor.getCustomOrangeColor()
         searchVw.setScopeBarButtonTitleTextAttributes([NSAttributedStringKey.foregroundColor.rawValue: UIColor.white], for: UIControlState.normal)
-
+        
         
         for s in searchVw.subviews[0].subviews {
             if s is UITextField {
@@ -93,37 +89,32 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
     //MARK: - Search bar delegate methods
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
- 
+        
         switch searchBar.selectedScopeButtonIndex
         {
         case 0:
             filteredSearchResults = searchText.isEmpty ? arrOfData : arrOfData.filter({ (item) -> Bool in
                 
-                return item.Client.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+                return item.EmpID.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
             })
             break
         case 1:
             filteredSearchResults = searchText.isEmpty ? arrOfData : arrOfData.filter({ (item) -> Bool in
                 
-                return item.Product.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+                return item.EmpName.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
             })
             break
-        case 2:
-            filteredSearchResults = searchText.isEmpty ? arrOfData : arrOfData.filter({ (item) -> Bool in
-                
-                return item.Manager.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-            })
-            break
+ 
         default:
             break
         }
         
-      
         
-        self.tblSales.reloadData()
+        
+        self.tblEmployeeList.reloadData()
     }
     
-
+    
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         
@@ -135,7 +126,7 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
         self.searchVw.showsCancelButton = false
         //self.mySearchBar.text = ""
         self.searchVw.resignFirstResponder()
-        self.tblSales.reloadData()
+        self.tblEmployeeList.reloadData()
     }
     //MARK: - tableview Data source and delegate methods..
     
@@ -147,26 +138,22 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         
-        return 6
+        return arrOfTitleData.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SalesCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EmployeeListCell", for: indexPath)
         
         var mainArray = [[String]]()
         
         for item in filteredSearchResults!
         {
             var subArray = [String]()
-
-            subArray.append(item.Date)
-            subArray.append(item.Client)
-            subArray.append(item.Manager)
-            subArray.append(item.Invoice)
-            subArray.append(item.Product)
-            subArray.append(item.Amount)
+            
+            subArray.append(item.EmpID)
+            subArray.append(item.EmpName)
             
             mainArray.append(subArray)
             
@@ -184,25 +171,34 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
         cell.detailTextLabel?.textColor = UIColor.white.withAlphaComponent(0.9)
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         cell.detailTextLabel?.text = saleData[indexPath.row]
-       
+        
         // Cell appearance...
         cell.backgroundColor = UIColor.white.withAlphaComponent(0.3)
-        cell.selectionStyle = .none
+       // cell.selectionStyle = .none
         //cell.layer.borderColor = UIColor.getCustomOrangeColor().cgColor
         //cell.layer.borderWidth = 1
         //cell.layer.cornerRadius = 25
         //cell.clipsToBounds = true
         
         
-        /*
-        // first create UIImageView
-        var imageView : UIImageView
-        imageView  = UIImageView(frame:CGRect(x: 0, y: 0, width: cell.frame.height/2, height: cell.frame.height/2))
-        imageView.image = #imageLiteral(resourceName: "rightArrow")
         
-        // then set it as cellAccessoryType
-        cell.accessoryView = imageView
-        */
+         // first create UIImageView
+        if indexPath.row == 0
+        {
+            cell.accessoryView?.isHidden = false
+             var imageView : UIImageView
+             imageView  = UIImageView(frame:CGRect(x: 0, y: 0, width: cell.frame.height/2, height: cell.frame.height/2))
+             imageView.image = #imageLiteral(resourceName: "rightArrow")
+            
+             // then set it as cellAccessoryType
+             cell.accessoryView = imageView
+        }
+        else
+        {
+            
+            cell.accessoryView?.isHidden = true
+        }
+ 
         
         return cell
     }
@@ -210,7 +206,7 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-
+        
     }
     // Set the spacing between sections
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
