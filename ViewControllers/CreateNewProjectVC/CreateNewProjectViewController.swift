@@ -1,34 +1,34 @@
 //
-//  DailyVisitEntryViewController.swift
+//  CreateNewProjectViewController.swift
 //  ARCHIDPLY
 //
-//  Created by Ganesh on 27/04/18.
+//  Created by Ganesh on 16/06/18.
 //  Copyright © 2018 Ganesh. All rights reserved.
 //
 
 import UIKit
 
-class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate,UIScrollViewDelegate {
+class CreateNewProjectViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate,UIScrollViewDelegate {
     
-    @IBOutlet weak var selectDataOfVisitField: UITextField!
-    @IBOutlet weak var customerTypeField: SearchTextField!
-    @IBOutlet weak var customerNameField: SearchTextField!
-    @IBOutlet weak var addressTextVw: UITextView!
-    @IBOutlet weak var cellNumberField: UITextField!
-    @IBOutlet weak var emailAddressField: UITextField!
-    @IBOutlet weak var purposeOfVisitField: UITextField!
-    @IBOutlet weak var selectCatalogueAndPOPField: UITextField!
-    @IBOutlet weak var praposedNextVisitDate: UITextField!
-    @IBOutlet weak var createNewProjectField: UITextField!
-    @IBOutlet weak var btnSave: UIButton!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var ProjectOrSiteNameField: UITextField!
+    @IBOutlet weak var ProjectStartDateField: UITextField!
+    @IBOutlet weak var ProjectEndDateField: UITextField!
+    @IBOutlet weak var ProductListField: UITextField!
+    @IBOutlet weak var EstimatedAmountField: UITextField!
+    @IBOutlet weak var InfluencerNameField: SearchTextField!
+    @IBOutlet weak var AddressField: UITextField!
+    @IBOutlet weak var LocationOfProjectField: UITextField!
+    
     @IBOutlet weak var scrollVC: UIScrollView!
-    @IBOutlet var txtFieldsColln: [UITextField]!
+    @IBOutlet weak var ContentScrollVC: UIView!
+    @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var ConstraintContentHeight: NSLayoutConstraint!
+    @IBOutlet var txtFieldsColln: [UITextField]!
     
     var activeField : UITextField?
     var lastOffset: CGPoint!
     var keyboardHeight: CGFloat!
+    
     var multiSelectValues = [String]()
     var selectedCells = [Int]()
     
@@ -37,7 +37,7 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
 
         for Tfields in txtFieldsColln
         {
-            if Tfields.tag == 1 || Tfields.tag == 8 || Tfields.tag == 9
+            if Tfields.tag == 2 || Tfields.tag == 3
             {
                 Tfields.layer.borderColor = UIColor.white.cgColor
                 Tfields.layer.borderWidth = 1
@@ -54,18 +54,18 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
             }
             
         }
-
+        
+        self.addDoneButtonOnKeyboard(TxtField: EstimatedAmountField)
         self.showingArrowToTextFields()
-        self.setupTextView()
-        self.setupSearchTextfield()
-        CommonObjectClass().EnableButtons(buttons: [btnSave], withBackgroundColor: UIColor.getCustomOrangeColor())
 
+        CommonObjectClass().EnableButtons(buttons: [btnSave], withBackgroundColor: .getCustomOrangeColor())
+        
         // Observe keyboard change
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
-    }
 
+    }
     // MARK: - Keyboard Handling
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -117,63 +117,47 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
         
         keyboardHeight = nil
     }
-
+    
     
     //MARK: - Helper Methods
-    func setupTextView() -> Void
-    {
-        // Add bottom border
-        addressTextVw.setBottomBorder(withColor: UIColor.getCustomOrangeColor())
-        addressTextVw.textColor = PlaceHolderColor
-        
-    }
+    
     func showingArrowToTextFields() -> Void
     {
         
         let nextArrowImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         nextArrowImage.image = #imageLiteral(resourceName: "rightArrow")
-        createNewProjectField.rightView = nextArrowImage
-        createNewProjectField.rightViewMode = .always
+        ProductListField.rightView = nextArrowImage
+        ProductListField.rightViewMode = .always
         
         let downArrowImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         downArrowImage.image = #imageLiteral(resourceName: "downArrow")
-        selectCatalogueAndPOPField.rightView = downArrowImage
-        selectCatalogueAndPOPField.rightViewMode = .always
+        InfluencerNameField.rightView = downArrowImage
+        InfluencerNameField.rightViewMode = .always
         
     }
-    func setupSearchTextfield ()
-    {
-        //        let item1 = SearchTextFieldItem(title: "Blue", subtitle: "", image: nil)
-        //        let item2 = SearchTextFieldItem(title: "Red", subtitle: "", image: nil)
-        //        let item3 = SearchTextFieldItem(title: "Yellow", subtitle: "", image: nil)
+    
+    func addDoneButtonOnKeyboard(TxtField:UITextField) {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        doneToolbar.barStyle       = UIBarStyle.black
+        let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonAction))
         
-        customerTypeField.theme = SearchTextFieldTheme.darkTheme()
-        customerTypeField.theme.bgColor = UIColor.black
-        customerTypeField.theme.separatorColor = UIColor.getCustomOrangeColor()
-        customerTypeField.theme.cellHeight = 40
-        customerTypeField.backgroundColor = UIColor.black
-        customerTypeField.theme.font = UIFont.systemFont(ofSize: 14)
-        customerTypeField.highlightAttributes = [NSAttributedStringKey.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 14)]
+        var items = [UIBarButtonItem]()
+        items.append(flexSpace)
+        items.append(done)
         
-        // Set the array of strings you want to suggest
-        customerTypeField.filterStrings(["OEM", "Corporates", "Architects","Contractor","Dealers","Site Visits"])
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
         
-        customerTypeField.itemSelectionHandler = { filteredResults, itemPosition in
-            // Just in case you need the item position
-            let item = filteredResults[itemPosition]
-            print("Item at position \(itemPosition): \(item.title)")
-            
-            // Do whatever you want with the picked item
-            self.customerTypeField.text = item.title
-        }
-        
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "downArrow"))
-        imageView.contentMode = UIViewContentMode.center
-        imageView.frame = CGRect(x: 0.0, y: 0.0, width: imageView.image!.size.width + 20.0, height: imageView.image!.size.height)
-        customerTypeField.rightViewMode = UITextFieldViewMode.always
-        customerTypeField.rightView = imageView
-        
+        TxtField.inputAccessoryView = doneToolbar
     }
+    
+    @objc func doneButtonAction() {
+        activeField?.resignFirstResponder()
+        activeField = nil
+       // self.EstimatedAmountField.resignFirstResponder()
+    }
+    
     
     //MARK: - UITextField Delegae Methods
     
@@ -185,18 +169,18 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        if textField.tag == 1 || textField.tag == 8
+        if textField.tag == 2 || textField.tag == 3
         {
             var alert_title = ""
             
-            if textField.tag == 1
+            if textField.tag == 2
             {
-                alert_title = "Select Date of Visit"
+                alert_title = "Select Project Start Date"
             }
-            else if textField.tag == 8
+            else if textField.tag == 3
             {
                 
-                alert_title = "Select Praposed Next Visit Date"
+                alert_title = "Select Proect End Date"
                 
             }
             
@@ -207,13 +191,13 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
                 dateFormatter.dateStyle = .medium
                 let strDate = dateFormatter.string(from: date)
                 textField.textColor = UIColor.white
-                if textField.tag == 1
+                if textField.tag == 2
                 {
-                    textField.text = "Date of Visit : \(strDate)"
+                    textField.text = "Project Start Date : \(strDate)"
                 }
-                else if textField.tag == 8
+                else if textField.tag == 3
                 {
-                    textField.text = "Praposed Next Visit Date : \(strDate)"
+                    textField.text = "Project End Date : \(strDate)"
                 }
                 
             }
@@ -221,23 +205,21 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
             dateFormatter.dateStyle = .medium
             let strDate = dateFormatter.string(from: Date())
             textField.textColor = UIColor.white
-            if textField.tag == 1
+            if textField.tag == 2
             {
-                textField.text = "Date of Visit : \(strDate)"
+                textField.text = "Project Start Date : \(strDate)"
             }
-            else if textField.tag == 8
+            else if textField.tag == 3
             {
-                textField.text = "Praposed Next Visit Date : \(strDate)"
+                textField.text = "Project End Date : \(strDate)"
             }
-            
-            
-            
+                        
             alert.addAction(title: "OK", style: .cancel)
             alert.show()
             
             return false
         }
-        else if textField.tag == 7
+        else if textField.tag == 4
         {
             let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MultiSelectViewPopUpView") as! MultiSelectViewPopUpView
             popOverVC.didSelectItem = { (selectedIndex : [Int],selectedValues:[String]) -> () in
@@ -247,30 +229,28 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
                     self.selectedCells = selectedIndex
                     self.multiSelectValues = selectedValues
                     textField.text = selectedValues.joined(separator: ",")
-                    
+ 
                 }
                 else
                 {
                     textField.text = ""
+                    
                     self.selectedCells = []
                     self.multiSelectValues = []
-                   
                 }
-                
             }
             self.addChildViewController(popOverVC)
             popOverVC.view.bounds = self.view.bounds
             self.view.addSubview(popOverVC.view)
             popOverVC.selectedCells = self.selectedCells
             popOverVC.selectedValues = self.multiSelectValues
-
             popOverVC.didMove(toParentViewController: self)
             
             return false
         }
         else if textField.tag == 9
         {
-    
+            
             self.performSegue(withIdentifier: "CreateNewProject", sender: self)
             
             return false
@@ -288,7 +268,10 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
     deinit {
        // NotificationCenter.default.removeObserver(self)
     }
-    
+
+    @IBAction func btnSaveClicked(_ sender: UIButton)
+    {
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

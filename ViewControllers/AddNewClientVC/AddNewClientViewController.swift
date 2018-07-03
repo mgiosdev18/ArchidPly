@@ -68,6 +68,11 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
         
     }
     
+    override func viewWillLayoutSubviews(){
+        super.viewWillLayoutSubviews()
+        ScrollVC.contentSize = CGSize(width: ScrollVC.frame.size.width, height: ContectScrollVw.frame.size.height)
+    }
+    
     // MARK: - Keyboard Handling
  
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -165,7 +170,7 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
 
     
     func addDoneButtonOnKeyboard(TxtField:UITextField) {
-        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 50))
         doneToolbar.barStyle       = UIBarStyle.default
         let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonAction))
@@ -292,6 +297,22 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
                 }
                 
             }
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            let strDate = dateFormatter.string(from: Date())
+            textField.textColor = UIColor.white
+            if textField.tag == 5
+            {
+                textField.text = "Date of Visit : \(strDate)"
+            }
+            else if textField.tag == 6
+            {
+                textField.text = "Praposed Next Visit Date : \(strDate)"
+            }
+            
+            
+            
             alert.addAction(title: "OK", style: .cancel)
             alert.show()
             
@@ -312,7 +333,7 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self)
+       // NotificationCenter.default.removeObserver(self)
     }
     
     override func didReceiveMemoryWarning() {

@@ -1,4 +1,3 @@
-//
 //  CommonObjectClass.swift
 //  ARCHIDPLY
 //

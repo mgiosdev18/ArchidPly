@@ -93,6 +93,16 @@ class EditPJPViewController: UIViewController,UITextFieldDelegate,UITextViewDele
                 textField.text = "Next Visit Date : \(strDate)"
                 
             }
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            let strDate = dateFormatter.string(from: Date())
+            textField.textColor = UIColor.white
+            if textField.tag == 2
+            {
+                textField.text = "Next Visit Date : \(strDate)"
+            }
+
             alert.addAction(title: "OK", style: .cancel)
             alert.show()
             
