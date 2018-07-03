@@ -61,7 +61,7 @@ class ClientHistoryDetailsViewController: UIViewController,UITableViewDelegate,U
         self.tblHistoryDetails.tableFooterView = UIView()
         self.tblHistoryDetails.backgroundColor = UIColor.clear
         self.tblHistoryDetails.estimatedRowHeight = 50.0
-        self.tblHistoryDetails.rowHeight = UITableViewAutomaticDimension
+        self.tblHistoryDetails.rowHeight = UITableView.automaticDimension
     }
     
   

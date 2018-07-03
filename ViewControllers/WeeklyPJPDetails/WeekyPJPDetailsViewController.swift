@@ -49,7 +49,7 @@ class WeekyPJPDetailsViewController: UIViewController,UITableViewDelegate,UITabl
         self.tblWeeklyPJPDetails.backgroundColor = UIColor.clear
         
         self.tblWeeklyPJPDetails.estimatedRowHeight = 50.0
-        self.tblWeeklyPJPDetails.rowHeight = UITableViewAutomaticDimension
+        self.tblWeeklyPJPDetails.rowHeight = UITableView.automaticDimension
     }
     
     

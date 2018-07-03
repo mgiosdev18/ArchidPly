@@ -29,9 +29,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.lblVersion.text = String(describing:"App Version \(String(describing: Bundle.main.releaseVersionNumber!))(\(Bundle.main.buildVersionNumber!))")
         
         //Key board notifications..
-        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
  
@@ -44,8 +44,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     //MARK: - Setup textfields and Login Button

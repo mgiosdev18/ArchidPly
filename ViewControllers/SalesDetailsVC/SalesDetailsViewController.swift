@@ -59,7 +59,7 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
         self.tblSales.tableFooterView = UIView()
         self.tblSales.backgroundColor = UIColor.clear
         self.tblSales.estimatedRowHeight = 50.0
-        self.tblSales.rowHeight = UITableViewAutomaticDimension
+        self.tblSales.rowHeight = UITableView.automaticDimension
     }
 
     //MARK: - Setup Search bar
@@ -76,7 +76,7 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
         searchVw.selectedScopeButtonIndex = 0
         searchVw.scopeBarBackgroundImage = UIImage()
         searchVw.tintColor = UIColor.getCustomOrangeColor()
-        searchVw.setScopeBarButtonTitleTextAttributes([NSAttributedStringKey.foregroundColor.rawValue: UIColor.white], for: UIControlState.normal)
+        searchVw.setScopeBarButtonTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([NSAttributedString.Key.foregroundColor.rawValue: UIColor.white]), for: UIControl.State.normal)
 
         
         for s in searchVw.subviews[0].subviews {
@@ -241,4 +241,10 @@ class SalesDetailsViewController: UIViewController,UITableViewDelegate,UITableVi
     }
     */
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

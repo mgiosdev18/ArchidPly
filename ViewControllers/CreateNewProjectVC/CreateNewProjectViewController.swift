@@ -61,8 +61,8 @@ class CreateNewProjectViewController: UIViewController,UITextFieldDelegate,UITex
         CommonObjectClass().EnableButtons(buttons: [btnSave], withBackgroundColor: .getCustomOrangeColor())
         
         // Observe keyboard change
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
 
     }
@@ -73,7 +73,7 @@ class CreateNewProjectViewController: UIViewController,UITextFieldDelegate,UITex
             return
         }
         
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             keyboardHeight = keyboardSize.height
             
             // so increase contentView's height by keyboard height
@@ -139,8 +139,8 @@ class CreateNewProjectViewController: UIViewController,UITextFieldDelegate,UITex
     func addDoneButtonOnKeyboard(TxtField:UITextField) {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
         doneToolbar.barStyle       = UIBarStyle.black
-        let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonAction))
+        let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneButtonAction))
         
         var items = [UIBarButtonItem]()
         items.append(flexSpace)
@@ -239,12 +239,12 @@ class CreateNewProjectViewController: UIViewController,UITextFieldDelegate,UITex
                     self.multiSelectValues = []
                 }
             }
-            self.addChildViewController(popOverVC)
+            self.addChild(popOverVC)
             popOverVC.view.bounds = self.view.bounds
             self.view.addSubview(popOverVC.view)
             popOverVC.selectedCells = self.selectedCells
             popOverVC.selectedValues = self.multiSelectValues
-            popOverVC.didMove(toParentViewController: self)
+            popOverVC.didMove(toParent: self)
             
             return false
         }

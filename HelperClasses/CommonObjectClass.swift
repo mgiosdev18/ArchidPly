@@ -25,7 +25,7 @@ class CommonObjectClass: NSObject {
             btn.layer.borderWidth = 1
             btn.layer.borderColor = UIColor.getCustomGreyColor().cgColor
             btn.isUserInteractionEnabled = false
-            btn.setTitleColor(UIColor.getCustomGreyColor(), for: .normal)
+            btn.setTitleColor(UIColor.getCustomGreyColor(), for: UIControl.State.normal)
             btn.layer.borderWidth = 1
             btn.layer.cornerRadius = 5
         }
@@ -41,7 +41,7 @@ class CommonObjectClass: NSObject {
             btn.layer.borderWidth = 1
             btn.layer.borderColor = UIColor.white.cgColor
             btn.isUserInteractionEnabled = true
-            btn.setTitleColor(UIColor.white, for: .normal)
+            btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
             btn.layer.borderWidth = 1
             btn.layer.cornerRadius = 5
         }

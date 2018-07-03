@@ -61,8 +61,8 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
         CommonObjectClass().EnableButtons(buttons: [btnSave], withBackgroundColor: UIColor.getCustomOrangeColor())
 
         // Observe keyboard change
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
 
@@ -73,7 +73,7 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
             return
         }
         
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             keyboardHeight = keyboardSize.height
             
             // so increase contentView's height by keyboard height
@@ -153,7 +153,7 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
         customerTypeField.theme.cellHeight = 40
         customerTypeField.backgroundColor = UIColor.black
         customerTypeField.theme.font = UIFont.systemFont(ofSize: 14)
-        customerTypeField.highlightAttributes = [NSAttributedStringKey.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 14)]
+        customerTypeField.highlightAttributes = [NSAttributedString.Key.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 14)]
         
         // Set the array of strings you want to suggest
         customerTypeField.filterStrings(["OEM", "Corporates", "Architects","Contractor","Dealers","Site Visits"])
@@ -168,9 +168,9 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
         }
         
         let imageView = UIImageView(image: #imageLiteral(resourceName: "downArrow"))
-        imageView.contentMode = UIViewContentMode.center
+        imageView.contentMode = UIView.ContentMode.center
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: imageView.image!.size.width + 20.0, height: imageView.image!.size.height)
-        customerTypeField.rightViewMode = UITextFieldViewMode.always
+        customerTypeField.rightViewMode = UITextField.ViewMode.always
         customerTypeField.rightView = imageView
         
     }
@@ -258,13 +258,13 @@ class DailyVisitEntryViewController: UIViewController,UITextFieldDelegate,UIText
                 }
                 
             }
-            self.addChildViewController(popOverVC)
+            self.addChild(popOverVC)
             popOverVC.view.bounds = self.view.bounds
             self.view.addSubview(popOverVC.view)
             popOverVC.selectedCells = self.selectedCells
             popOverVC.selectedValues = self.multiSelectValues
 
-            popOverVC.didMove(toParentViewController: self)
+            popOverVC.didMove(toParent: self)
             
             return false
         }

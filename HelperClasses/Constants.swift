@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+#if swift(>=4.2)
+import UIKit.UIGeometry
+extension UIEdgeInsets {
+    public static let zero = UIEdgeInsets()
+}
+#endif
+
 // Current Screeen sizes
 let screenSize = UIScreen.main.bounds
 let screenWidth = screenSize.width

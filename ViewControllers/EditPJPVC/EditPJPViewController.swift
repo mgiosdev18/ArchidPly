@@ -52,7 +52,7 @@ class EditPJPViewController: UIViewController,UITextFieldDelegate,UITextViewDele
         customerListSearchField.theme.cellHeight = 40
         customerListSearchField.backgroundColor = UIColor.black
         customerListSearchField.theme.font = UIFont.systemFont(ofSize: 14)
-        customerListSearchField.highlightAttributes = [NSAttributedStringKey.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 14)]
+        customerListSearchField.highlightAttributes = [NSAttributedString.Key.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 14)]
         customerListSearchField.setValue(PlaceHolderColor, forKeyPath: "_placeholderLabel.textColor")
         customerListSearchField.setBottomBorder(withColor: UIColor.getCustomOrangeColor())
 
@@ -70,9 +70,9 @@ class EditPJPViewController: UIViewController,UITextFieldDelegate,UITextViewDele
         }
         
         let imageView = UIImageView(image: #imageLiteral(resourceName: "downArrow"))
-        imageView.contentMode = UIViewContentMode.center
+        imageView.contentMode = UIView.ContentMode.center
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: imageView.image!.size.width + 20.0, height: imageView.image!.size.height)
-        customerListSearchField.rightViewMode = UITextFieldViewMode.always
+        customerListSearchField.rightViewMode = UITextField.ViewMode.always
         customerListSearchField.rightView = imageView
         
     }

@@ -61,8 +61,8 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
         self.setupSearchTextfield()
         
         // Observe keyboard change
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
        CommonObjectClass().EnableButtons(buttons: [btnSave], withBackgroundColor: UIColor.getCustomOrangeColor())
         
@@ -80,7 +80,7 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
             return
         }
         
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             keyboardHeight = keyboardSize.height
             
             // so increase contentView's height by keyboard height
@@ -145,7 +145,7 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
         CustomerListSearchField.theme.cellHeight = 40
         CustomerListSearchField.backgroundColor = UIColor.black
         CustomerListSearchField.theme.font = UIFont.systemFont(ofSize: 14)
-        CustomerListSearchField.highlightAttributes = [NSAttributedStringKey.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 14)]
+        CustomerListSearchField.highlightAttributes = [NSAttributedString.Key.foregroundColor: UIColor.getCustomOrangeColor(), NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 14)]
 
         // Set the array of strings you want to suggest
         CustomerListSearchField.filterStrings(["OEM", "Corporates", "Architects","Contractor","Dealers","Site Visits"])
@@ -160,9 +160,9 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
         }
         
         let imageView = UIImageView(image: #imageLiteral(resourceName: "downArrow"))
-        imageView.contentMode = UIViewContentMode.center
+        imageView.contentMode = UIView.ContentMode.center
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: imageView.image!.size.width + 20.0, height: imageView.image!.size.height)
-        CustomerListSearchField.rightViewMode = UITextFieldViewMode.always
+        CustomerListSearchField.rightViewMode = UITextField.ViewMode.always
         CustomerListSearchField.rightView = imageView
 
     }
@@ -172,8 +172,8 @@ class AddNewClientViewController: UIViewController,UITextFieldDelegate,UITextVie
     func addDoneButtonOnKeyboard(TxtField:UITextField) {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 50))
         doneToolbar.barStyle       = UIBarStyle.default
-        let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
-        let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneButtonAction))
+        let flexSpace              = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem  = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.doneButtonAction))
         
         var items = [UIBarButtonItem]()
         items.append(flexSpace)

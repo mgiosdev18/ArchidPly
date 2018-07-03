@@ -55,7 +55,7 @@ class EmployeeViewController: UIViewController,UITableViewDelegate,UITableViewDa
         self.tblEmployeeList.tableFooterView = UIView()
         self.tblEmployeeList.backgroundColor = UIColor.clear
         self.tblEmployeeList.estimatedRowHeight = 50.0
-        self.tblEmployeeList.rowHeight = UITableViewAutomaticDimension
+        self.tblEmployeeList.rowHeight = UITableView.automaticDimension
     }
     
     //MARK: - Setup Search bar
@@ -72,7 +72,7 @@ class EmployeeViewController: UIViewController,UITableViewDelegate,UITableViewDa
         searchVw.selectedScopeButtonIndex = 0
         searchVw.scopeBarBackgroundImage = UIImage()
         searchVw.tintColor = UIColor.getCustomOrangeColor()
-        searchVw.setScopeBarButtonTitleTextAttributes([NSAttributedStringKey.foregroundColor.rawValue: UIColor.white], for: UIControlState.normal)
+        searchVw.setScopeBarButtonTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([NSAttributedString.Key.foregroundColor.rawValue: UIColor.white]), for: UIControl.State.normal)
         
         
         for s in searchVw.subviews[0].subviews {
@@ -237,4 +237,10 @@ class EmployeeViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     */
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }
