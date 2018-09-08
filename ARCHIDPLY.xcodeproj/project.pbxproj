@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1CC29C20B4743600333E97 /* ClientHistoryDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC29B20B4743600333E97 /* ClientHistoryDatesViewController.swift */; };
+		1F1CC29F20B4794D00333E97 /* ClientHistoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC29E20B4794D00333E97 /* ClientHistoryDetailsViewController.swift */; };
+		1F1CC2A220B4A04F00333E97 /* WeekyPJPDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC2A120B4A04E00333E97 /* WeekyPJPDetailsViewController.swift */; };
+		1F1CC2A520B4A6A100333E97 /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CC2A420B4A6A100333E97 /* EmployeeViewController.swift */; };
+		1F8DF85B20D3985000CB8709 /* MultiSelectViewPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DF85A20D3985000CB8709 /* MultiSelectViewPopUpView.swift */; };
+		1F9CC02620D4CF6400C42796 /* CreateNewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CC02520D4CF6400C42796 /* CreateNewProjectViewController.swift */; };
+		1FA0ACCA20AFF92F00CD1DDA /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */; };
 		1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5652091198A00205E72 /* AppDelegate.swift */; };
 		1FCDD56B2091198A00205E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDD5692091198A00205E72 /* Main.storyboard */; };
 		1FCDD56E2091198A00205E72 /* ARCHIDPLY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD56C2091198A00205E72 /* ARCHIDPLY.xcdatamodeld */; };
@@ -28,9 +35,41 @@
 		1FCDD59E20925DBD00205E72 /* ViewWeeklyPJPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59D20925DBD00205E72 /* ViewWeeklyPJPViewController.swift */; };
 		1FCDD5A020925DD600205E72 /* ClientHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD59F20925DD600205E72 /* ClientHistoryViewController.swift */; };
 		1FCDD5A220925DEC00205E72 /* SalesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDD5A120925DEC00205E72 /* SalesDetailsViewController.swift */; };
+		1FCFF53720EBD5220021395E /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4E820EBD5220021395E /* Array+Extensions.swift */; };
+		1FCFF53820EBD5220021395E /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4E920EBD5220021395E /* UISegmentedControl+Extensions.swift */; };
+		1FCFF53920EBD5220021395E /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4EA20EBD5220021395E /* UIImageView+Extensions.swift */; };
+		1FCFF53A20EBD5220021395E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4EB20EBD5220021395E /* UIViewController+Extensions.swift */; };
+		1FCFF53B20EBD5220021395E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4EC20EBD5220021395E /* UIView+Extensions.swift */; };
+		1FCFF53C20EBD5220021395E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4ED20EBD5220021395E /* Date+Extension.swift */; };
+		1FCFF53E20EBD5220021395E /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4EF20EBD5220021395E /* UITextView+Extensions.swift */; };
+		1FCFF53F20EBD5220021395E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F020EBD5220021395E /* UIColor+Extensions.swift */; };
+		1FCFF54020EBD5220021395E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F120EBD5220021395E /* UIImage+Extensions.swift */; };
+		1FCFF54120EBD5220021395E /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F220EBD5220021395E /* UISearchBar+Extensions.swift */; };
+		1FCFF54220EBD5220021395E /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F320EBD5220021395E /* UIApplication+Extensions.swift */; };
+		1FCFF54320EBD5220021395E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F420EBD5220021395E /* UIAlertController+Extensions.swift */; };
+		1FCFF54420EBD5220021395E /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F520EBD5220021395E /* Optional+Extensions.swift */; };
+		1FCFF54520EBD5220021395E /* Common+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F620EBD5220021395E /* Common+Extensions.swift */; };
+		1FCFF54620EBD5220021395E /* Locale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F720EBD5220021395E /* Locale+Extensions.swift */; };
+		1FCFF54720EBD5220021395E /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4F820EBD5220021395E /* UITextField+Extensions.swift */; };
+		1FCFF54820EBD5220021395E /* AttributedTextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF4FB20EBD5220021395E /* AttributedTextBlock.swift */; };
+		1FCFF55A20EBD5220021395E /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF51920EBD5220021395E /* PickerViewViewController.swift */; };
+		1FCFF55F20EBD5220021395E /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF52320EBD5220021395E /* ColorPickerViewController.swift */; };
+		1FCFF56020EBD5220021395E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF52520EBD5220021395E /* DatePickerViewController.swift */; };
+		1FCFF56720EBD5220021395E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF53220EBD5220021395E /* Label.swift */; };
+		1FCFF56820EBD5220021395E /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF53320EBD5220021395E /* SegmentedControl.swift */; };
+		1FCFF56920EBD5220021395E /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF53420EBD5220021395E /* GradientSlider.swift */; };
+		1FCFF56A20EBD5220021395E /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF53520EBD5220021395E /* TextField.swift */; };
+		1FCFF56B20EBD5220021395E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCFF53620EBD5220021395E /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1CC29B20B4743600333E97 /* ClientHistoryDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHistoryDatesViewController.swift; sourceTree = "<group>"; };
+		1F1CC29E20B4794D00333E97 /* ClientHistoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHistoryDetailsViewController.swift; sourceTree = "<group>"; };
+		1F1CC2A120B4A04E00333E97 /* WeekyPJPDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekyPJPDetailsViewController.swift; sourceTree = "<group>"; };
+		1F1CC2A420B4A6A100333E97 /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
+		1F8DF85A20D3985000CB8709 /* MultiSelectViewPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectViewPopUpView.swift; sourceTree = "<group>"; };
+		1F9CC02520D4CF6400C42796 /* CreateNewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewProjectViewController.swift; sourceTree = "<group>"; };
+		1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1FCDD5622091198A00205E72 /* ARCHIDPLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHIDPLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCDD5652091198A00205E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCDD56A2091198A00205E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +93,31 @@
 		1FCDD59D20925DBD00205E72 /* ViewWeeklyPJPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWeeklyPJPViewController.swift; sourceTree = "<group>"; };
 		1FCDD59F20925DD600205E72 /* ClientHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHistoryViewController.swift; sourceTree = "<group>"; };
 		1FCDD5A120925DEC00205E72 /* SalesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDetailsViewController.swift; sourceTree = "<group>"; };
+		1FCFF4E820EBD5220021395E /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4E920EBD5220021395E /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4EA20EBD5220021395E /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4EB20EBD5220021395E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4EC20EBD5220021395E /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4ED20EBD5220021395E /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1FCFF4EF20EBD5220021395E /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F020EBD5220021395E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F120EBD5220021395E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F220EBD5220021395E /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F320EBD5220021395E /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F420EBD5220021395E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F520EBD5220021395E /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F620EBD5220021395E /* Common+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F720EBD5220021395E /* Locale+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4F820EBD5220021395E /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		1FCFF4FB20EBD5220021395E /* AttributedTextBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedTextBlock.swift; sourceTree = "<group>"; };
+		1FCFF51920EBD5220021395E /* PickerViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
+		1FCFF52320EBD5220021395E /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		1FCFF52520EBD5220021395E /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1FCFF53220EBD5220021395E /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		1FCFF53320EBD5220021395E /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		1FCFF53420EBD5220021395E /* GradientSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
+		1FCFF53520EBD5220021395E /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		1FCFF53620EBD5220021395E /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +131,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1CC29A20B4741D00333E97 /* ClientHistoryDates */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC29B20B4743600333E97 /* ClientHistoryDatesViewController.swift */,
+			);
+			path = ClientHistoryDates;
+			sourceTree = "<group>";
+		};
+		1F1CC29D20B478D800333E97 /* ClientHistoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC29E20B4794D00333E97 /* ClientHistoryDetailsViewController.swift */,
+			);
+			path = ClientHistoryDetails;
+			sourceTree = "<group>";
+		};
+		1F1CC2A020B4A03700333E97 /* WeeklyPJPDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC2A120B4A04E00333E97 /* WeekyPJPDetailsViewController.swift */,
+			);
+			path = WeeklyPJPDetails;
+			sourceTree = "<group>";
+		};
+		1F1CC2A320B4A66C00333E97 /* EmployeList */ = {
+			isa = PBXGroup;
+			children = (
+				1F1CC2A420B4A6A100333E97 /* EmployeeViewController.swift */,
+			);
+			path = EmployeList;
+			sourceTree = "<group>";
+		};
+		1F8DF85920D3982200CB8709 /* MultiSelectPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DF85A20D3985000CB8709 /* MultiSelectViewPopUpView.swift */,
+			);
+			path = MultiSelectPopUp;
+			sourceTree = "<group>";
+		};
+		1F97CF0820D373EB00EDAD4C /* AlerPopup */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF4E620EBD5220021395E /* Source */,
+			);
+			path = AlerPopup;
+			sourceTree = "<group>";
+		};
+		1F9CC02420D4CF4E00C42796 /* CreateNewProjectVC */ = {
+			isa = PBXGroup;
+			children = (
+				1F9CC02520D4CF6400C42796 /* CreateNewProjectViewController.swift */,
+			);
+			path = CreateNewProjectVC;
+			sourceTree = "<group>";
+		};
+		1FA0ACC820AFF92100CD1DDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DF85920D3982200CB8709 /* MultiSelectPopUp */,
+				1F97CF0820D373EB00EDAD4C /* AlerPopup */,
+				1FA0ACC920AFF92E00CD1DDA /* SearchTextField.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1FCDD5592091198A00205E72 = {
 			isa = PBXGroup;
 			children = (
+				1FA0ACC820AFF92100CD1DDA /* Resources */,
 				1FCDD57E20911A5900205E72 /* HelperClasses */,
 				1FCDD57A209119FB00205E72 /* ViewControllers */,
 				1FCDD5642091198A00205E72 /* ARCHIDPLY */,
@@ -103,6 +234,7 @@
 			children = (
 				1FCDD594209229AC00205E72 /* NavigationVC */,
 				1FCDD57B20911A1B00205E72 /* LoginPageVC */,
+				1F9CC02420D4CF4E00C42796 /* CreateNewProjectVC */,
 				1FCDD5822091391500205E72 /* HomeVC */,
 				1FCDD5A320925E0300205E72 /* DailyVisitEntryVC */,
 				1FCDD5A420925E1300205E72 /* AddNewClientVC */,
@@ -110,6 +242,10 @@
 				1FCDD5A620925E3900205E72 /* ViewWeeklyPJPVC */,
 				1FCDD5A720925E4900205E72 /* ClientHistoryVC */,
 				1FCDD5A820925E5700205E72 /* SalesDetailsVC */,
+				1F1CC29A20B4741D00333E97 /* ClientHistoryDates */,
+				1F1CC29D20B478D800333E97 /* ClientHistoryDetails */,
+				1F1CC2A020B4A03700333E97 /* WeeklyPJPDetails */,
+				1F1CC2A320B4A66C00333E97 /* EmployeList */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +336,103 @@
 			path = SalesDetailsVC;
 			sourceTree = "<group>";
 		};
+		1FCFF4E620EBD5220021395E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF4E720EBD5220021395E /* Extensions */,
+				1FCFF4F920EBD5220021395E /* Viewers */,
+				1FCFF4FD20EBD5220021395E /* Pickers */,
+				1FCFF53120EBD5220021395E /* Views */,
+			);
+			name = Source;
+			path = "../../../../../../Downloads/Sample Downloaded Projects/alerts-and-pickers-new/Source";
+			sourceTree = "<group>";
+		};
+		1FCFF4E720EBD5220021395E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF4E820EBD5220021395E /* Array+Extensions.swift */,
+				1FCFF4E920EBD5220021395E /* UISegmentedControl+Extensions.swift */,
+				1FCFF4EA20EBD5220021395E /* UIImageView+Extensions.swift */,
+				1FCFF4EB20EBD5220021395E /* UIViewController+Extensions.swift */,
+				1FCFF4EC20EBD5220021395E /* UIView+Extensions.swift */,
+				1FCFF4ED20EBD5220021395E /* Date+Extension.swift */,
+				1FCFF4EF20EBD5220021395E /* UITextView+Extensions.swift */,
+				1FCFF4F020EBD5220021395E /* UIColor+Extensions.swift */,
+				1FCFF4F120EBD5220021395E /* UIImage+Extensions.swift */,
+				1FCFF4F220EBD5220021395E /* UISearchBar+Extensions.swift */,
+				1FCFF4F320EBD5220021395E /* UIApplication+Extensions.swift */,
+				1FCFF4F420EBD5220021395E /* UIAlertController+Extensions.swift */,
+				1FCFF4F520EBD5220021395E /* Optional+Extensions.swift */,
+				1FCFF4F620EBD5220021395E /* Common+Extensions.swift */,
+				1FCFF4F720EBD5220021395E /* Locale+Extensions.swift */,
+				1FCFF4F820EBD5220021395E /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FCFF4F920EBD5220021395E /* Viewers */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF4FA20EBD5220021395E /* Models */,
+			);
+			path = Viewers;
+			sourceTree = "<group>";
+		};
+		1FCFF4FA20EBD5220021395E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF4FB20EBD5220021395E /* AttributedTextBlock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FCFF4FD20EBD5220021395E /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF51820EBD5220021395E /* PickerView */,
+				1FCFF52220EBD5220021395E /* Color */,
+				1FCFF52420EBD5220021395E /* Date */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		1FCFF51820EBD5220021395E /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF51920EBD5220021395E /* PickerViewViewController.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		1FCFF52220EBD5220021395E /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF52320EBD5220021395E /* ColorPickerViewController.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		1FCFF52420EBD5220021395E /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF52520EBD5220021395E /* DatePickerViewController.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		1FCFF53120EBD5220021395E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FCFF53220EBD5220021395E /* Label.swift */,
+				1FCFF53320EBD5220021395E /* SegmentedControl.swift */,
+				1FCFF53420EBD5220021395E /* GradientSlider.swift */,
+				1FCFF53520EBD5220021395E /* TextField.swift */,
+				1FCFF53620EBD5220021395E /* Button.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,11 +460,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Ganesh;
 				TargetAttributes = {
 					1FCDD5612091198A00205E72 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -272,24 +506,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCFF55F20EBD5220021395E /* ColorPickerViewController.swift in Sources */,
+				1FCFF54220EBD5220021395E /* UIApplication+Extensions.swift in Sources */,
 				1FCDD5842091395C00205E72 /* HomeViewController.swift in Sources */,
+				1FCFF54320EBD5220021395E /* UIAlertController+Extensions.swift in Sources */,
+				1FCFF56920EBD5220021395E /* GradientSlider.swift in Sources */,
+				1FCFF56820EBD5220021395E /* SegmentedControl.swift in Sources */,
 				1FCDD5932092299400205E72 /* NavigationViewController.swift in Sources */,
 				1FCDD57D20911A3200205E72 /* LoginViewController.swift in Sources */,
+				1F1CC2A220B4A04F00333E97 /* WeekyPJPDetailsViewController.swift in Sources */,
+				1FCFF56A20EBD5220021395E /* TextField.swift in Sources */,
 				1FCDD59E20925DBD00205E72 /* ViewWeeklyPJPViewController.swift in Sources */,
+				1FCFF53820EBD5220021395E /* UISegmentedControl+Extensions.swift in Sources */,
 				1FCDD5A220925DEC00205E72 /* SalesDetailsViewController.swift in Sources */,
 				1FCDD56E2091198A00205E72 /* ARCHIDPLY.xcdatamodeld in Sources */,
+				1FCFF56B20EBD5220021395E /* Button.swift in Sources */,
+				1FCFF54620EBD5220021395E /* Locale+Extensions.swift in Sources */,
 				1FCDD59A20925D9300205E72 /* AddNewClientViewController.swift in Sources */,
 				1FCDD5892092274A00205E72 /* ExtesionClass.swift in Sources */,
+				1FCFF53720EBD5220021395E /* Array+Extensions.swift in Sources */,
 				1FCDD58F209227E400205E72 /* AlertMessages.swift in Sources */,
+				1FCFF56020EBD5220021395E /* DatePickerViewController.swift in Sources */,
+				1FCFF53B20EBD5220021395E /* UIView+Extensions.swift in Sources */,
+				1FCFF54420EBD5220021395E /* Optional+Extensions.swift in Sources */,
+				1FCFF53C20EBD5220021395E /* Date+Extension.swift in Sources */,
+				1FCFF56720EBD5220021395E /* Label.swift in Sources */,
+				1FCFF54820EBD5220021395E /* AttributedTextBlock.swift in Sources */,
+				1FCFF53F20EBD5220021395E /* UIColor+Extensions.swift in Sources */,
 				1FCDD58B209227AC00205E72 /* CommonObjectClass.swift in Sources */,
+				1FCFF54720EBD5220021395E /* UITextField+Extensions.swift in Sources */,
+				1FCFF54020EBD5220021395E /* UIImage+Extensions.swift in Sources */,
+				1FA0ACCA20AFF92F00CD1DDA /* SearchTextField.swift in Sources */,
 				1FCDD58020911A9B00205E72 /* CoreDataManager.swift in Sources */,
 				1FCDD5912092290600205E72 /* Reach.swift in Sources */,
+				1F1CC29C20B4743600333E97 /* ClientHistoryDatesViewController.swift in Sources */,
 				1FCDD59C20925DA600205E72 /* EditPJPViewController.swift in Sources */,
 				1FCDD5A020925DD600205E72 /* ClientHistoryViewController.swift in Sources */,
+				1FCFF55A20EBD5220021395E /* PickerViewViewController.swift in Sources */,
+				1FCFF53E20EBD5220021395E /* UITextView+Extensions.swift in Sources */,
 				1FCDD5662091198A00205E72 /* AppDelegate.swift in Sources */,
+				1F1CC29F20B4794D00333E97 /* ClientHistoryDetailsViewController.swift in Sources */,
+				1FCFF54120EBD5220021395E /* UISearchBar+Extensions.swift in Sources */,
+				1F8DF85B20D3985000CB8709 /* MultiSelectViewPopUpView.swift in Sources */,
+				1FCFF53920EBD5220021395E /* UIImageView+Extensions.swift in Sources */,
 				1FCDD58D209227D300205E72 /* Constants.swift in Sources */,
+				1F1CC2A520B4A6A100333E97 /* EmployeeViewController.swift in Sources */,
+				1F9CC02620D4CF6400C42796 /* CreateNewProjectViewController.swift in Sources */,
 				1FCDD59820925D7700205E72 /* DailyVisitEntryViewController.swift in Sources */,
 				1FCDD59620922BE200205E72 /* HomeCollectionViewCell.swift in Sources */,
+				1FCFF54520EBD5220021395E /* Common+Extensions.swift in Sources */,
+				1FCFF53A20EBD5220021395E /* UIViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +595,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -336,6 +603,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -363,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,6 +654,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -393,6 +662,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -414,7 +684,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -427,12 +697,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JG2D6N8FSZ;
 				INFOPLIST_FILE = ARCHIDPLY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.ARCHIDPLY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.archidply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -442,12 +713,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JG2D6N8FSZ;
 				INFOPLIST_FILE = ARCHIDPLY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.ARCHIDPLY;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ganesh.archidply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

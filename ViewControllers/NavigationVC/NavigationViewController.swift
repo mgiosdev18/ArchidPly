@@ -17,7 +17,7 @@ class NavigationViewController: UINavigationController {
         navigationController?.navigationBar.shadowImage = UIColor.clear.as1ptImage()
         self.navigationBar.tintColor = UIColor.white
         self.navigationBar.backgroundColor = UIColor.clear
-        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         // Sets background to a blank/empty image
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)

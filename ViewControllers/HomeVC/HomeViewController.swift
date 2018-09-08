@@ -14,6 +14,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     
     let numberOfCellsPerRow: CGFloat = 2
     let arrImages = [#imageLiteral(resourceName: "Daily Visit Entry"),#imageLiteral(resourceName: "Add New Client"),#imageLiteral(resourceName: "Edit PJP"),#imageLiteral(resourceName: "View Weekly PJP"),#imageLiteral(resourceName: "Client History"),#imageLiteral(resourceName: "Sales details")]
+    
     let arrTitles = [" Daily Visit Entry "," Add New Client "," Edit PJP "," View Weekly PJP "," Client History "," Sales Details "]
  
     
